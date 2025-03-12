@@ -1,0 +1,38 @@
+#intro {
+  background-image: url(../assets/Background_Intro.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100vh;
+}
+
+header {
+  text-align: center;
+
+  span {
+    color: var(--red);
+  }
+}
+
+#avatar {
+  justify-self: center;
+
+  position: relative;
+  max-width: 112px;
+
+  img {
+    width: 96px;
+    border-radius: 50%;
+    border: 2px solid var(--red);
+    padding: 4px;
+  }
+
+  div {
+    position: absolute;
+    background-image: url(../assets/Code.png);
+    width: 36px;
+    height: 32px;
+    bottom: 0;
+    right: 0;
+  }
+}

@@ -1,23 +1,23 @@
 .title-lg {
-  font: 700 56px/120% var(--font-family-asap);
+  font: var(--h1);
 }
 
 .title-md {
-  font: 700 24px/120% var(--font-family-asap);
+  font: var(--h2);
 }
 
 .title-sm {
-  font: 700 16px/120% var(--font-family-asap);
+  font: var(--h3);
 }
 
 .subtitle {
-  font: 400 20px/120% var(--font-family-inconsolata);
+  font: var(--subtitle);
 }
 
 .text-md {
-  font: 400 16px/140% var(--font-family-maven-pro);
+  font: var(--text-md);
 }
 
 .text-sm {
-  font: 400 14px/140% var(--font-family-maven-pro);
+  font: var(--text-sm);
 }
