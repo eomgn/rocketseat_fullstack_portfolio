@@ -1,21 +1,27 @@
-#intro {
+header {
   background-image: url(../assets/Background_Intro.png);
-  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   height: 100vh;
-}
 
-header {
   text-align: center;
 
-  span {
+  &:has(span) span {
     color: var(--red);
   }
 }
 
+#intro {
+  max-width: 680px;
+
+  padding-block: 120px 80px;
+}
+
 #avatar {
   justify-self: center;
+
+  margin-bottom: 64px;
 
   position: relative;
   max-width: 112px;
@@ -34,5 +40,19 @@ header {
     height: 32px;
     bottom: 0;
     right: 0;
+  }
+}
+
+#description {
+  h1 {
+    padding-block: 8px 20px;
+  }
+
+  h3 {
+    color: var(--gray-500);
+  }
+
+  p {
+    color: var(--gray-400);
   }
 }
