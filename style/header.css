@@ -1,7 +1,9 @@
 header {
   background-image: url(../assets/Background_Intro.png);
-  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  max-width: 100%;
 
   height: 100vh;
 
@@ -16,12 +18,13 @@ header {
   max-width: 680px;
 
   padding-block: 120px 80px;
+  /* padding-block: 120px 160px; */
 }
 
 #avatar {
   justify-self: center;
 
-  margin-bottom: 64px;
+  margin-bottom: 56px;
 
   position: relative;
   max-width: 112px;
@@ -33,11 +36,14 @@ header {
     padding: 4px;
   }
 
-  div {
-    position: absolute;
-    background-image: url(../assets/Code.png);
+  &::before {
+    content: "";
     width: 36px;
     height: 32px;
+
+    position: absolute;
+    background-image: url(../assets/Code.png);
+    background-repeat: no-repeat;
     bottom: 0;
     right: 0;
   }
@@ -55,4 +61,33 @@ header {
   p {
     color: var(--gray-400);
   }
+}
+
+#skills {
+  max-width: 754px;
+
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--gray-300);
+    padding: 8px 16px;
+    border-radius: 999px;
+
+    &:has(.text-md) span {
+      color: var(--gray-500);
+    }
+  }
+}
+
+#caret-down {
+  background-image: url(../assets/CaretDoubleDown.svg);
+  width: 32px;
+  height: 32px;
+
+  margin-top: 94px;
 }
