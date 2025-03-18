@@ -19,8 +19,8 @@
     />
   </head>
   <body>
-    <header>
-      <div id="intro" class="container">
+    <div id="intro">
+      <header class="container">
         <div id="avatar">
           <img
             src="https://avatars.githubusercontent.com/u/83884728?v=4"
@@ -29,9 +29,9 @@
         </div>
 
         <div id="description">
-          <h3 class="subtitle">
+          <h2 class="subtitle">
             Hello World! Meu nome é <span>Matheus Gabriel</span> e sou
-          </h3>
+          </h2>
           <h1 class="title-lg">Desenvolvedor Fullstack</h1>
           <p class="text-sm">
             Transformo necessidades em aplicações reais, evolventes e
@@ -40,7 +40,7 @@
             desafios complexos.
           </p>
         </div>
-      </div>
+      </header>
 
       <div id="skills" class="container grid grid-flow-cols">
         <div>
@@ -73,10 +73,20 @@
           <span class="text-md">Node.js</span>
         </div>
       </div>
+      <a href="#" class="container">
+        <div id="caret-down">
+          <!-- caret-down -->
+        </div></a
+      >
+    </div>
 
-      <div id="caret-down" class="container">
-        <!-- caret-down -->
+    <main class="container">
+      <div class="header-section">
+        <span>Meu trabalho</span>
+        <h3>Veja os projetos em destaque</h3>
       </div>
-    </header>
+      <section id="jobs" class="grid grid-flow-cols grid-cols-3"></section>
+      <section id="services"></section>
+    </main>
   </body>
 </html>
