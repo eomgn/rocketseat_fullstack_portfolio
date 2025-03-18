@@ -76,7 +76,7 @@ header {
 a {
   display: flex;
   justify-content: center;
-  margin-block: 90px 57px;
+  margin-block: 95px;
 
   #caret-down {
     background-image: url(../assets/CaretDoubleDown.svg);
