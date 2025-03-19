@@ -34,12 +34,32 @@ section {
 }
 
 #services {
-  padding-top: 88px;
+  padding-block: 88px 120px;
   background-color: var(--gray-100);
 
-  article {
-    padding: 20px;
-    border: 1px solid red;
-    width: fit-content;
+  #services-main {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+    article {
+      padding: 20px;
+      border: 2px solid var(--gray-200);
+      border-radius: 12px;
+      max-width: 280px;
+      color: var(--gray-600);
+      gap: 27px;
+
+      img {
+        max-height: 48px;
+        object-fit: contain;
+      }
+
+      div {
+        text-align: start;
+        color: var(--gray-500);
+        gap: 8px;
+      }
+    }
   }
 }
