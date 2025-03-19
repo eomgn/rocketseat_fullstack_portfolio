@@ -32,3 +32,14 @@ section {
     }
   }
 }
+
+#services {
+  padding-top: 88px;
+  background-color: var(--gray-100);
+
+  article {
+    padding: 20px;
+    border: 1px solid red;
+    width: fit-content;
+  }
+}
