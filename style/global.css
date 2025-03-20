@@ -29,6 +29,10 @@
   --text-sm: 400 14px/140% var(--font-family-maven-pro);
 }
 
+ul li {
+  list-style: none;
+}
+
 body {
   width: 100%;
   font: var(--text-md);
@@ -43,19 +47,4 @@ body {
 
 main {
   padding-top: 72px;
-}
-
-.header-section {
-  text-align: center;
-  margin-bottom: 56px;
-
-  span {
-    display: inline-block;
-    margin-bottom: 8px;
-    color: var(--red);
-  }
-
-  h3 {
-    color: var(--gray-600);
-  }
 }

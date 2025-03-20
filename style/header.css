@@ -4,11 +4,16 @@
   background-repeat: no-repeat;
 
   object-fit: cover;
+  height: 900px;
 }
 
 header {
   padding: 180px 180px 80px 180px;
   text-align: center;
+
+  h3 {
+    color: var(--gray-600);
+  }
 
   &:has(span) span {
     color: var(--red);

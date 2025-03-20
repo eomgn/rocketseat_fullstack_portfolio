@@ -1,0 +1,45 @@
+footer {
+  padding-top: 128px;
+}
+
+.header-footer {
+  text-align: center;
+  gap: 8px;
+
+  &:has(span) span {
+    color: var(--purple);
+  }
+
+  h3 {
+    color: var(--gray-600);
+  }
+
+  p {
+    color: var(--gray-500);
+  }
+}
+
+.main-footer {
+  background-image: url(../assets/Background_Contacts.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-block: 48px 200px;
+
+  ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+
+    li {
+      a {
+        margin: 0;
+        width: 400px;
+        padding: 20px;
+        background-color: aquamarine;
+        border-radius: 8px;
+      }
+    }
+  }
+}
