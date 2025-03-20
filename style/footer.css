@@ -1,10 +1,7 @@
-footer {
-  padding-top: 128px;
-}
-
 .header-footer {
   text-align: center;
   gap: 8px;
+  margin-top: 128px;
 
   &:has(span) span {
     color: var(--purple);
@@ -19,17 +16,18 @@ footer {
   }
 }
 
-.main-footer {
+.social-links {
   background-image: url(../assets/Background_Contacts.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-block: 48px 200px;
+
+  padding-block: 48px 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   ul {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     gap: 16px;
 
     li {
@@ -37,9 +35,37 @@ footer {
         margin: 0;
         width: 400px;
         padding: 20px;
-        background-color: aquamarine;
+        border: 1px solid var(--gray-300);
         border-radius: 8px;
+
+        display: flex;
+        justify-content: space-between;
+
+        div {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+        }
+
+        img {
+          width: 20px;
+        }
+
+        &:hover {
+          border: 1.5px solid var(--blue);
+          border-radius: 0.8rem;
+
+          img {
+            filter: invert(63%) sepia(51%) saturate(3305%) hue-rotate(179deg)
+              brightness(83%) contrast(92%);
+          }
+        }
       }
     }
   }
 }
+
+/* img {
+    filter: invert(63%) sepia(51%) saturate(3305%) hue-rotate(179deg)
+      brightness(83%) contrast(92%);
+  } */
